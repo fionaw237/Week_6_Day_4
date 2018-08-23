@@ -16,6 +16,10 @@ body {
   border-radius: 20px;
 }*/
 
+form {
+  text-align: center;
+}
+
 #author {
   width: 200px;
 }
@@ -37,6 +41,8 @@ body {
 
 input {
   display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 5px;
   /*width: 200px;*/
 }
 
