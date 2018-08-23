@@ -1,3 +1,27 @@
 body {
   font-family: Palatino;
 }
+
+/*#reading-list {
+  display: flex;
+  border: 1px solid hotpink;
+  margin: 10px;
+  padding: 10px;
+}*/
+
+h1 {
+  text-align: center;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 4px;
+  margin: 4px;
+  /*border-bottom: 1px solid darkslategray;*/
+  text-align: left;
+  /*white-space: pre-line;*/
+}
