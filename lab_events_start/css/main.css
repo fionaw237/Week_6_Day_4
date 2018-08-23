@@ -1,5 +1,7 @@
 body {
-  font-family: Palatino;
+  font-family: Helvetica;
+  background-color: lightgrey;
+  color: darkslategray;
 }
 
 /*#reading-list {
@@ -9,8 +11,40 @@ body {
   padding: 10px;
 }*/
 
+/*.form-wrapper {
+  border: 1px solid darkslategray;
+  border-radius: 20px;
+}*/
+
+#author {
+  width: 200px;
+}
+
+#title {
+  width: 200px;
+}
+
+#category {
+  width: 200px;
+}
+
+.primary {
+  width: 65px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+}
+
+input {
+  display: inline-block;
+  /*width: 200px;*/
+}
+
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  /*border: 1px solid darkslategray;
+  border-radius: 20px;*/
 }
 
 .grid-row {
@@ -20,8 +54,20 @@ h1 {
 .cell {
   flex: 1;
   padding: 4px;
-  margin: 4px;
+  /*margin-bottom: 4px;*/
   /*border-bottom: 1px solid darkslategray;*/
   text-align: left;
   /*white-space: pre-line;*/
 }
+
+.reading-list-headings {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  /*border-bottom: 1px solid darkslategray;*/
+  /*margin-bottom: 10px;*/
+}
+
+/*.form-item {
+  justify-content: center;
+}*/

@@ -33,19 +33,19 @@ const handleFormSubmit = function(event){
 // add individual cells for each property
   const newBookTitle = document.createElement('div')
   newBookTitle.classList.add('cell');
-  newBookTitle.textContent = `Title: ${event.target.title.value}`
+  newBookTitle.textContent = `${event.target.title.value}`
 
   newGridRow.appendChild(newBookTitle);
 
   const newBookAuthor = document.createElement('div')
   newBookAuthor.classList.add('cell');
-  newBookAuthor.textContent = `Author: ${event.target.author.value}`
+  newBookAuthor.textContent = `${event.target.author.value}`
 
   newGridRow.appendChild(newBookAuthor);
 
   const newBookCategory = document.createElement('div')
   newBookCategory.classList.add('cell');
-  newBookCategory.textContent = `Category: ${event.target.category.value}`
+  newBookCategory.textContent = `${event.target.category.value}`
 
   newGridRow.appendChild(newBookCategory);
 
@@ -58,6 +58,14 @@ const handleFormSubmit = function(event){
 
 
 const handleDeleteAllButton = function(){
-  const readingList = document.querySelector('#reading-list');
-  readingList.innerHTML = ""
+  // const readingList = document.querySelector('#reading-list');
+
+  document.body.children
+
+  var readingList = document.getElementById("reading-list");
+  // console.log(readingList.children.length);
+  while (readingList.children.length > 2) {
+    readingList.removeChild(readingList.lastChild);
+  }
+
 }
